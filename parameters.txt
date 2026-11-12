@@ -1,0 +1,124 @@
+# Grain-growth parameter sweep: D_gb = 1e2.
+# 21 cases: m = 2, 3, 4; k_grain / D_gb = 1e-3 ... 1e3.
+# M = Nx = 5000; adaptive-step parameter alpha = 0.001.
+# dt is an upper bound; the solver chooses the actual adaptive timestep.
+# A common t_end = 1e10 is used for all cases in this new sweep.
+# VTK output: every 10000 steps; CSV history: every 1000 steps.
+# Unique case names keep these results separate from the earlier series.
+
+# m = 3; k_grain / D_gb = 1e-3
+case = gg_M5000_alpha1e-3_m3_D1e2_k1e-1
+Nx = 5000
+alpha = 0.001
+dt = 1e10
+t_end = 1e10
+output_interval = 10000
+D_gb = 1e2
+k_grain = 1e-1
+m = 3
+C_max = 1
+C_eq = 0
+ell0 = 1
+initial_profile = linear
+
+---
+
+# m = 3; k_grain / D_gb = 1e-2
+case = gg_M5000_alpha1e-3_m3_D1e2_k1e0
+Nx = 5000
+alpha = 0.001
+dt = 1e10
+t_end = 1e10
+output_interval = 10000
+D_gb = 1e2
+k_grain = 1e0
+m = 3
+C_max = 1
+C_eq = 0
+ell0 = 1
+initial_profile = linear
+
+---
+
+# m = 3; k_grain / D_gb = 1e-1
+case = gg_M5000_alpha1e-3_m3_D1e2_k1e1
+Nx = 5000
+alpha = 0.001
+dt = 1e10
+t_end = 1e10
+output_interval = 10000
+D_gb = 1e2
+k_grain = 1e1
+m = 3
+C_max = 1
+C_eq = 0
+ell0 = 1
+initial_profile = linear
+
+---
+
+# m = 3; k_grain / D_gb = 1e0
+case = gg_M5000_alpha1e-3_m3_D1e2_k1e2
+Nx = 5000
+alpha = 0.001
+dt = 1e10
+t_end = 1e10
+output_interval = 10000
+D_gb = 1e2
+k_grain = 1e2
+m = 3
+C_max = 1
+C_eq = 0
+ell0 = 1
+initial_profile = linear
+
+---
+
+# m = 3; k_grain / D_gb = 1e1
+case = gg_M5000_alpha1e-3_m3_D1e2_k1e3
+Nx = 5000
+alpha = 0.001
+dt = 1e10
+t_end = 1e10
+output_interval = 10000
+D_gb = 1e2
+k_grain = 1e3
+m = 3
+C_max = 1
+C_eq = 0
+ell0 = 1
+initial_profile = linear
+
+---
+
+# m = 3; k_grain / D_gb = 1e2
+case = gg_M5000_alpha1e-3_m3_D1e2_k1e4
+Nx = 5000
+alpha = 0.001
+dt = 1e10
+t_end = 1e10
+output_interval = 10000
+D_gb = 1e2
+k_grain = 1e4
+m = 3
+C_max = 1
+C_eq = 0
+ell0 = 1
+initial_profile = linear
+
+---
+
+# m = 3; k_grain / D_gb = 1e3
+case = gg_M5000_alpha1e-3_m3_D1e2_k1e5
+Nx = 5000
+alpha = 0.001
+dt = 1e10
+t_end = 1e10
+output_interval = 10000
+D_gb = 1e2
+k_grain = 1e5
+m = 3
+C_max = 1
+C_eq = 0
+ell0 = 1
+initial_profile = linear
